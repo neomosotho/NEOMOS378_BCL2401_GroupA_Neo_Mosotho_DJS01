@@ -14,7 +14,8 @@ const fuel = 5000; // remaining fuel (kg)
 const fuelBurnRate = 0.5; // fuel burn rate (kg/s)
 
 
-const newDistance = distance + (velocity*time) //calcultes new distance
+const newDistance = distance + (velocity*(time/3600)) //calcultes new distance
+
 const remainingFuel = fuelBurnRate*time //calculates remaining fuel
 const newVelocity = calcNewVel(acceleration, velocity, time) //calculates new velocity based on acceleration
 
